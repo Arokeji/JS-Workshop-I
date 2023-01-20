@@ -339,7 +339,7 @@ function quienTieneMas (array) {
 console.log(quienTieneMas(arrayAdinerados));
 
 //Ejercicio 11
-console.log("\n-------------------------------\nEjercicio 10\n-------------------------------\n");
+console.log("\n-------------------------------\nEjercicio 11\n-------------------------------\n");
 
 /* 
     Crea una función que reciba un listado y mueva todos los 0 al final, 
@@ -370,3 +370,45 @@ function pushZeroes (array) {
 }
 
 console.log(pushZeroes(listadoGeneral));
+
+//Ejercicio 12
+console.log("\n-------------------------------\nEjercicio 12\n-------------------------------\n");
+
+/* 
+    Crea una función que reciba un listado de strings y devuelva 
+    el string diferente al resto.
+
+    Serán strings sin espacios.
+
+    Ejemplo:
+
+     Entrada: [ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]
+     Salida : 'BbBb’
+
+     Entrada: ['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba’]
+     Salida : 'foo’
+*/ 
+
+/*
+let arrayPalabras = ['Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a'];
+
+function differentWord(array) {
+    let wordCount = {};
+    for (let i = 0; i < array.length; i++) {
+        if (!wordCount[array[i]]) {
+            wordCount[array[i]] = 1;
+        } else {
+            wordCount[array[i]]++;
+        }
+    }
+
+    for (let word in wordCount) {
+        if (wordCount[word] === 1) {
+            return word;
+        }
+    }
+}
+
+
+console.log(differentWord(arrayPalabras));
+*/
